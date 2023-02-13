@@ -19,7 +19,7 @@ if (!function_exists('nl2br_except_pre')) {
      *
      * @return    string
      */
-    function nl2br_except_pre($str)
+    function nl2br_except_pre(string $str): string
     {
         return (new \nguyenanhung\Libraries\Typography\SimpleTypography())->nl2br_except_pre($str);
     }
@@ -36,7 +36,7 @@ if (!function_exists('auto_typography')) {
      *
      * @return    string
      */
-    function auto_typography($str, $reduce_linebreaks = false)
+    function auto_typography(string $str, bool $reduce_linebreaks = false): string
     {
         return (new \nguyenanhung\Libraries\Typography\SimpleTypography())->auto_typography($str, $reduce_linebreaks);
     }

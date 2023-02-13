@@ -80,7 +80,7 @@ class SimpleTypography
      *
      * @return    string
      */
-    public function auto_typography($str, $reduce_linebreaks = false)
+    public function auto_typography(string $str, bool $reduce_linebreaks = false): string
     {
         if ($str === '') {
             return '';
@@ -250,7 +250,7 @@ class SimpleTypography
      *
      * @return    string
      */
-    public function format_characters($str)
+    public function format_characters(string $str): string
     {
         static $table;
 
@@ -313,7 +313,7 @@ class SimpleTypography
      *
      * @return    string
      */
-    protected function _format_newlines($str)
+    protected function _format_newlines(string $str): string
     {
         if ($str === '' || (strpos($str, "\n") === false && !in_array($this->last_block_element, $this->inner_block_required))) {
             return $str;
@@ -352,7 +352,7 @@ class SimpleTypography
      *
      * @return    string
      */
-    protected function _protect_characters($match)
+    protected function _protect_characters(array $match): string
     {
         return str_replace(array("'", '"', '--', '  '), array('{@SQ}', '{@DQ}', '{@DD}', '{@NBS}'), $match[0]);
     }
@@ -366,7 +366,7 @@ class SimpleTypography
      *
      * @return    string
      */
-    public function nl2br_except_pre($str)
+    public function nl2br_except_pre(string $str): string
     {
         $newstr = '';
         for ($ex = explode('pre>', $str), $ct = count($ex), $i = 0; $i < $ct; $i++) {
