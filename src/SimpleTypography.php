@@ -21,7 +21,6 @@ namespace nguyenanhung\Libraries\Typography;
  */
 class SimpleTypography
 {
-
     /**
      * Block level elements that should not be wrapped inside <p> tags
      *
