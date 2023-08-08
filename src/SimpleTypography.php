@@ -87,7 +87,7 @@ class SimpleTypography
         }
 
         // Standardize Newlines to make matching easier
-        if (strpos($str, "\r") !== false) {
+        if (mb_strpos($str, "\r") !== false) {
             $str = str_replace(array("\r\n", "\r"), "\n", $str);
         }
 
@@ -99,7 +99,7 @@ class SimpleTypography
 
         // HTML comment tags don't conform to patterns of normal tags, so pull them out separately, only if needed
         $html_comments = array();
-        if (strpos($str, '<!--') !== false && preg_match_all('#(<!\-\-.*?\-\->)#s', $str, $matches)) {
+        if (mb_strpos($str, '<!--') !== false && preg_match_all('#(<!\-\-.*?\-\->)#s', $str, $matches)) {
             for ($i = 0, $total = count($matches[0]); $i < $total; $i++) {
                 $html_comments[] = $matches[0][$i];
                 $str = str_replace($matches[0][$i], '{@HC' . $i . '}', $str);
@@ -108,7 +108,7 @@ class SimpleTypography
 
         // match and yank <pre> tags if they exist.  It's cheaper to do this separately since most content will
         // not contain <pre> tags, and it keeps the PCRE patterns below simpler and faster
-        if (strpos($str, '<pre') !== false) {
+        if (mb_strpos($str, '<pre') !== false) {
             $str = preg_replace_callback('#<pre.*?>.*?</pre>#si', array($this, '_protect_characters'), $str);
         }
 
@@ -315,7 +315,7 @@ class SimpleTypography
      */
     protected function _format_newlines(string $str): string
     {
-        if ($str === '' || (strpos($str, "\n") === false && !in_array($this->last_block_element, $this->inner_block_required))) {
+        if ($str === '' || (mb_strpos($str, "\n") === false && !in_array($this->last_block_element, $this->inner_block_required))) {
             return $str;
         }
 
