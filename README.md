@@ -1,4 +1,9 @@
-[![Latest Stable Version](http://poser.pugx.org/nguyenanhung/typography-helper/v)](https://packagist.org/packages/nguyenanhung/typography-helper) [![Total Downloads](http://poser.pugx.org/nguyenanhung/typography-helper/downloads)](https://packagist.org/packages/nguyenanhung/typography-helper) [![Latest Unstable Version](http://poser.pugx.org/nguyenanhung/typography-helper/v/unstable)](https://packagist.org/packages/nguyenanhung/typography-helper) [![License](http://poser.pugx.org/nguyenanhung/typography-helper/license)](https://packagist.org/packages/nguyenanhung/typography-helper) [![PHP Version Require](http://poser.pugx.org/nguyenanhung/typography-helper/require/php)](https://packagist.org/packages/nguyenanhung/typography-helper)
+[![Latest Stable Version](https://img.shields.io/packagist/v/nguyenanhung/typography-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/typography-helper)
+[![Total Downloads](https://img.shields.io/packagist/dt/nguyenanhung/typography-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/typography-helper)
+[![Daily Downloads](https://img.shields.io/packagist/dd/nguyenanhung/typography-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/typography-helper)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/nguyenanhung/typography-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/typography-helper)
+[![License](https://img.shields.io/packagist/l/nguyenanhung/typography-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/typography-helper)
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/nguyenanhung/typography-helper/php)](https://packagist.org/packages/nguyenanhung/typography-helper)
 
 # Typography Helper
 
